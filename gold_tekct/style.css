@@ -1,0 +1,416 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f0df;
+    color: #30213d;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    padding: 30px 9.5%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+.logo span:first-child {
+    color: #ff765d;
+    font-size: 32px;
+}
+
+.logo .dot {
+    color: #ff765d;
+}
+
+.header-info {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+.header-info span {
+    color: #ff765d;
+    margin: 0 8px;
+}
+
+main {
+    max-width: 1160px;
+    margin: auto;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    margin-bottom: 18px;
+}
+
+.circle {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: #ff765d;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.intro h1 {
+    font-size: clamp(35px, 5vw, 65px);
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin-bottom: 14px;
+}
+
+.intro h1 span {
+    color: #ff765d;
+}
+
+.intro p {
+    color: #766a80;
+    font-size: 15px;
+}
+
+.ticket {
+    display: flex;
+    width: 100%;
+    min-height: 420px;
+    background: #fffaf0;
+    border: 3px solid #30213d;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-0.7deg);
+    box-shadow: 14px 15px 0 #30213d;
+}
+
+.ticket-left {
+    width: 61%;
+    background: #ff765d;
+    padding: 28px 30px 22px;
+    position: relative;
+    border-right: 3px dashed #30213d;
+}
+
+.top-line {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #30213d;
+    padding-bottom: 13px;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.welcome {
+    margin-top: 24px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.ticket-left h2 {
+    font-size: clamp(65px, 9vw, 120px);
+    line-height: 0.83;
+    letter-spacing: -5px;
+    margin-top: 14px;
+    font-weight: 900;
+    text-shadow: 5px 5px 0 #ffdf69;
+}
+
+.ticket-left h2 span {
+    color: #ffdf69;
+}
+
+.description {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-top: 22px;
+}
+
+.smiley {
+    width: 155px;
+    height: 155px;
+    background: #ffdf69;
+    border: 3px solid #30213d;
+    border-radius: 50%;
+    position: absolute;
+    top: 110px;
+    right: 25px;
+}
+
+.eyes {
+    display: flex;
+    justify-content: space-between;
+    width: 58px;
+    position: absolute;
+    top: 48px;
+    left: 48px;
+}
+
+.eyes span {
+    width: 10px;
+    height: 17px;
+    background: #30213d;
+    border-radius: 50%;
+    transform: rotate(20deg);
+}
+
+.mouth {
+    position: absolute;
+    width: 62px;
+    height: 28px;
+    border-bottom: 4px solid #30213d;
+    border-radius: 0 0 50% 50%;
+    top: 78px;
+    left: 36px;
+    transform: rotate(12deg);
+}
+
+.star {
+    position: absolute;
+    right: 58px;
+    bottom: 58px;
+    color: #ffdf69;
+    font-size: 38px;
+}
+
+.bottom-line {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 23px;
+    border-top: 2px solid #30213d;
+    padding-top: 13px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.ticket-right {
+    width: 39%;
+    padding: 30px 32px;
+    position: relative;
+    background: #fffaf0;
+}
+
+.star-badge {
+    position: absolute;
+    top: 27px;
+    right: 30px;
+    width: 51px;
+    height: 51px;
+    border: 3px solid #30213d;
+    background: #ffdf69;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+}
+
+.right-subtitle {
+    color: #81768a;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    margin-top: 5px;
+}
+
+.ticket-right h3 {
+    font-size: 29px;
+    margin-top: 5px;
+    letter-spacing: -1px;
+}
+
+.ticket-right h3 span {
+    color: #ff765d;
+}
+
+.details {
+    display: flex;
+    gap: 25px;
+    margin-top: 43px;
+}
+
+.details div,
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.ticket-right small {
+    color: #81768a;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+.ticket-right strong {
+    font-size: 14px;
+}
+
+.info {
+    margin-top: 23px;
+}
+
+.barcode {
+    height: 60px;
+    width: 100%;
+    margin-top: 40px;
+    border-top: 2px solid #30213d;
+    padding-top: 15px;
+    background: repeating-linear-gradient(
+        90deg,
+        #30213d 0px,
+        #30213d 3px,
+        transparent 3px,
+        transparent 6px,
+        #30213d 6px,
+        #30213d 8px,
+        transparent 8px,
+        transparent 12px
+    );
+    background-size: 100% 43px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.barcode-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    color: #81768a;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 750px) {
+
+    body {
+        padding: 20px;
+    }
+
+    header {
+        margin-bottom: 45px;
+    }
+
+    .header-info {
+        font-size: 9px;
+    }
+
+    .intro h1 {
+        letter-spacing: -2px;
+    }
+
+    .ticket {
+        flex-direction: column;
+        transform: none;
+    }
+
+    .ticket-left,
+    .ticket-right {
+        width: 100%;
+    }
+
+    .ticket-left {
+        min-height: 390px;
+        border-right: none;
+        border-bottom: 3px dashed #30213d;
+    }
+
+    .ticket-right {
+        min-height: 370px;
+    }
+
+    .smiley {
+        width: 110px;
+        height: 110px;
+        right: 15px;
+        top: 130px;
+    }
+
+    .eyes {
+        top: 32px;
+        left: 30px;
+        width: 48px;
+    }
+
+    .mouth {
+        top: 58px;
+        left: 22px;
+        width: 58px;
+    }
+
+    .ticket-left h2 {
+        font-size: 75px;
+    }
+
+    footer {
+        gap: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .ticket-left h2 {
+        font-size: 60px;
+    }
+
+    .smiley {
+        width: 85px;
+        height: 85px;
+    }
+
+    .eyes {
+        top: 22px;
+        left: 20px;
+        width: 40px;
+    }
+
+    .mouth {
+        top: 45px;
+        left: 13px;
+        width: 52px;
+    }
+
+    .top-line {
+        font-size: 7px;
+    }
+
+    .bottom-line {
+        font-size: 7px;
+    }
+}
